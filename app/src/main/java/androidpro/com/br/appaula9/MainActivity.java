@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
               dialogFragment.show(getFragmentManager(), "basic dialog");
             }
         });
-        Button button1 = (Button) findViewById(R.id.button);
+
+        Button button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ImageDialogFragment imageDialogFragment = new ImageDialogFragment();
-                imageDialogFragment.setStyle(DialogFragment.STYLE_NO_FRAME, 0);
                 imageDialogFragment.show(getFragmentManager(), "image dialog");
             }
         });

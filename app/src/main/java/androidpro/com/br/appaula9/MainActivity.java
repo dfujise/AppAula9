@@ -48,7 +48,32 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialogF
                 timePickerDialogFragment.show(getFragmentManager(), "timepicker dialog");
             }
         });
+        Button button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BasicAlertDialogFragment basicAlertDialogFragment = new BasicAlertDialogFragment();
+                basicAlertDialogFragment.show(getFragmentManager(), "Basic Alert dialog");
+            }
+        });
+        Button button5 = (Button) findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ListAlertDialogFragment listAlertDialogFragment = new ListAlertDialogFragment();
+                listAlertDialogFragment.show(getFragmentManager(), "List Alert dialog");
+            }
+        });
+        Button button6 = (Button) findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CustomAlertDialogFragment customAlertDialogFragment = new CustomAlertDialogFragment();
+                customAlertDialogFragment.show(getFragmentManager(), "Custom Alert dialog");
+            }
+        });
     }
+
 
     @Override
     public void OnDateEntered(int year, int monthOfYear, int dayOfMonth) {

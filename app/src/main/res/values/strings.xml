@@ -3,4 +3,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="comida_array">
+            <item>CArne</item>
+            <item>Peixe</item>
+            <item>Frango</item>
+            <item>Macarrão</item>
+    </string-array>
+
 </resources>
